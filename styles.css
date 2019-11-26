@@ -1,0 +1,36 @@
+body {
+    background-color: lightcoral;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    z-index: 1;
+    --border-active: solid;
+}
+
+.container {
+    margin: auto;
+    width: 50%;
+    border-style: dashed;
+  }
+  
+ #form-background{
+    background-color: lightcyan;
+    opacity: 0.6;
+    color: white;
+    width: 50%;
+    z-index: 0;
+  }
+
+  h1 {
+      font-size: 40px;
+      margin-bottom: 0px;
+  }
+
+  p {
+      font-size: 20px;
+  }
+  
+  header {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+  }
