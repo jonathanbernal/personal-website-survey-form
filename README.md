@@ -1,7 +1,7 @@
 # Survey for Personal Website
 
 This is a simple survey form that I made using html/css only as part of the FreeCodeCamp frontend certification. The intention of this project was just to design the front end aspect of the survey. As such, whatever data
-is submitted at the end of the form is not sent anywhere.
+is submitted at the end of the form is not sent anywhere. 
 
 # How to run
 
