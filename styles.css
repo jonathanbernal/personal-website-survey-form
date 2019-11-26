@@ -1,14 +1,27 @@
 body {
-    background-color: lightcoral;
     font-family: 'Ubuntu', sans-serif;
     font-size: 20px;
-    z-index: 1;
-    --border-active: solid;
+    color: white;
+    z-index: 0;
+    --border-active: none;
+    position: relative;
 }
+
+html::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 150%;
+    background-size: cover;
+    background-image: url("https://cdn.pixabay.com/photo/2015/01/28/23/35/landscape-615429_960_720.jpg");
+    opacity: 0.9;
+    z-index: -3;
+}
+
 
 header {
     margin: auto;
-    border-style: dotted;
+    border-style: var(--border-active);
     border-color: blue;
 }
 
@@ -25,37 +38,83 @@ p {
 }
 
 main {
-    border-style: dotted;
+    border-style: var(--border-active);
     border-color: white;
 }
 
 .container {
     margin: auto;
     width: 40%; 
-    border-style: dashed;
+    border-style: var(--border-active); /* use this property to debug the layout */
+    border-width: 2px;
     text-align: left;
-}
-
-#surveycontainer {
-
 }
 
 form {
     padding: 2.5em;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(46, 92, 0, 0.7);
+    border-radius: 5px;
+}
+
+form .container {
+    margin-bottom: 1.5em;
+    width: 100%;
 }
 
 label {
-    font-size: 24px;
-    border: solid green;
+    font-size: 1em;
+    margin-bottom: 2em;
 }
 
- #form-background{
-    background-color: lightcyan;
-    opacity: 0.6;
-    color: white;
-    width: 50%;
-    z-index: 0;
-  }
-  
+input {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/*
+ * Since the text field attributes (name, email, age, and textarea) exhibit the same styling characteristics,
+ * it is better to treat them the same way rather than targetting each individual attribute
+*/
+.textinput {
+    width: 98%;
+    height: 2em;
+    font-size: 0.75em;
+    border-radius: 5px;
+    border-style: none;
+    margin-top: 0.25em;
+    padding: 0.5em;
+}
+
+select {
+    width: 100%;
+    height: 2.75em;
+    font-size: 0.75em;
+    border-radius: 5px;
+    border-style: none;
+    margin-top: 0.25em;
+    padding: 0.75em;
+}
+
+option {
+    padding: 0.75em;
+    font-size: 1.2em;
+}
+
+.group-choice {
+    padding-top: 0.5em;
+}
+
+.container textarea {
+    width: 97.5%;
+    height: 5em;
+    margin: 0.5em 0;
+    resize: none;
+}
+
+#submit {
+    width: 100%;
+    height: 2.5em;
+    border-style: none;
+    border-radius: 5px;
+    background-color: rgba(122, 245, 0, 0.9);
+}
  

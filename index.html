@@ -3,10 +3,12 @@
     <head>
         <title>Jonathan Bernal's Website: Survey</title>
         <link rel="stylesheet" type="text/css" href="styles.css"></style>
-        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     </head>
 
+    <div class="background-container">
+    </div>
     <body>
+            <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
         <header>
             <div class="container">
                 <h1 id="title">Jonathan Bernal's Website Quality Survey</h1>
@@ -17,60 +19,75 @@
         <main>
             <div class="container" id="surveycontainer">
                 <form id="survey-form">
-                    <label id="name-label" for="name">
-                        Name<br>
-                        <input id="name" type="text" placeholder="Enter your name" required>
-                    </label>
-                    
-                    <br>
-                    
-                    <label id="email-label" for="email" >Email</label>
-                    <input id="email" type="email" placeholder="Enter your email" required>
-                    <br>
-                    
-                    <label id="number-label">Age (optional)</label>
-                    <input id="number" type="number" placeholder="Age" min="18" max="99" maxlength="2">
-                    <br>
-                    
-                    <label id="dropdown-label">Please select your Internet connection type</label>
-                    <select id="dropdown">
-                    <option value="3g">3G (mobile)</option>
-                    <option value="4g">4G (mobile)</option>
-                    <option value="broadband">Broadband</option>
-                    <option value="dsl">DSL</option>
-                    </select>
-                    <br>
-                    
-                    <label for="radio" id="radio-label">On a scale from 1 to 5, where 1 is the lowest and 5 is the highest, rate the time it took for my website to load up on your device</label>
-                    <div id="radio">
-                    <input id="radio" type="radio" name="load-speed" value="1">1 (poor)<br>
-                    <input type="radio" name="load-speed" value="2">2<br>
-                    <input type="radio" name="load-speed" value="3">3 (average)<br>
-                    <input type="radio" name="load-speed" value="4">4<br>
-                    <input type="radio" name="load-speed" value="5">5<br>
+                    <div class="container">
+                        <label id="name-label">
+                                Name<br>
+                                <input id="name" class="textinput" type="text" placeholder="Enter your name" required>
+                        </label>
                     </div>
-                    <br>
                     
-                    <label for="checkbox" id="checkbox-label">Please select the features that you liked from my website</label>
-                    <div id="checkbox">
-                    <input type="checkbox" value="navbar">Navigation Bar<br>
-                    <input type="checkbox" value="introduction">Introduction<br>
-                    <input type="checkbox" value="about">About<br>
-                    <input type="checkbox" value="featured-projects">Featured Projects<br>
-                    <input type="checkbox" value="contact">Contact
+                    <div class="container">
+                        <label id="email-label">Email<br>
+                            <input id="email" class="textinput" type="email" placeholder="youremail@mail.com" required>
+                        </label>
                     </div>
-                    <br>
                     
-                    <label for="text-area">Please leave any other ideas, suggestions, or concerns in the field below</label><br>
-                    <textarea id="text-area" placeholder="your answer is limited to a maximum of 500 characters" maxlength="500">
-                    </textarea>
-                    <br>
-                    <input id="submit" type="submit">
+                    <div class="container">
+                        <label id="number-label">Age (optional)<br>
+                            <input id="number" class="textinput" type="number" placeholder="Age" min="18" max="99" maxlength="2">
+                        </label>
+                    </div>
+                    
+                    <div class="container">
+                        <label id="dropdown-label">Please select your Internet connection type<br>
+                            <select id="dropdown" placeholder="Hello">
+                                <option value disabled>Select your mobile connection type</option>
+                                <option value="3g">3G (mobile)</option>
+                                <option value="4g">4G (mobile)</option>
+                                <option value="broadband">Broadband</option>
+                                <option value="dsl">DSL</option>
+                            </select>
+                        </label>
+                    </div>
+                    
+                    <div class="container">
+                        <label id="radio-label">On a scale from 1 to 5, where 1 is the lowest and 5 
+                            is the highest, rate the time it took for my website to load up on your device
+                            <div class="container group-choice">
+                                <input id="radio" type="radio" name="load-speed" value="1">1 (poor)<br>
+                                <input type="radio" name="load-speed" value="2">2<br>
+                                <input type="radio" name="load-speed" value="3">3 (average)<br>
+                                <input type="radio" name="load-speed" value="4">4<br>
+                                <input type="radio" name="load-speed" value="5">5(excellent)<br>
+                            </div>
+                        </label>
+                    </div>
+                    
+                    
+                    <div class="container">
+                        <label id="checkbox-label">Please select the features that you liked from my website the most<br>
+                            <div class="container group-choice">
+                                <input type="checkbox" value="navbar">Navigation Bar<br>
+                                <input type="checkbox" value="introduction">Introduction<br>
+                                <input type="checkbox" value="about">About<br>
+                                <input type="checkbox" value="featured-projects">Featured Projects<br>
+                                <input type="checkbox" value="contact">Contact
+                            </div>
+                        </label> 
+                    </div>
+                    
+                    <div class="container">
+                        <label>Please leave any other ideas, suggestions, or concerns in the field below<br>
+                            <textarea id="text-area" class="textinput" placeholder="your answer is limited to a maximum of 500 characters" maxlength="500"></textarea>
+                        </label>
+                    </div>
+                
+                    <div class="container">
+                        <input id="submit" type="submit">
+                    </div>
                 </form> 
             </div>
         </main>
-        
-        
     </body>
 
 </html>
